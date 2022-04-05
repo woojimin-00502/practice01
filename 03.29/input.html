@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        text: <input type="text">    <!--아무 글자 삽입-->
+        <br>
+        password: <input type="password">     <!--가려서 입력됨-->
+        <br>
+        email: <input type="email" required>   <!--이메일 사용/requires는 type에 맞춰 검사하는 역할-->
+        <br>
+        tel: <input type="tel" required>    <!--전화번호 입력-->
+        <br><br>
+        <input type="submit" value="버튼">    <!--데이터를 전송할때 쓰는 버튼-->
+        <br><br>
+        <input type="radio" name="1">       <!--name에 따라 하나만 선택할 수 있게 하는 선택요소-->
+        <input type="radio" name="1">
+        <br><br>
+        <input type="checkbox" name="">     <!--상관없이 중복 선택할 수 있는 요소-->
+        <input type="checkbox" name="">
+        <input type="checkbox" name="">
+
+        <fieldset style="width: 300px; height: 100px; background-color: blueviolet;">
+            <legend>제목</legend>
+            <input type="text">
+            <br>
+        </fieldset>           <!--fieldset 간단한 구역, 폼을 만들어주는 요소
+                               legend fieldset의 제목을 나타냄-->
+
+        <input type="time" name="time" id="time">  <!--시간을 선택할 수 있도록 하는 요소-->
+        <input type="datetime-local" name="" id="">  <!--시간과 날짜를 선택할 수 있도록 하는 요소-->
+
+        <select>
+            <option value="1">123</option>
+            <option value="1">456</option>
+            <option value="1">789</option>
+        </select>   <!--option의 갯수만큼 선택창을 만드는 요소-->
+
+        <label for="">text :</label>   <!--인풋앞에 글씨를 감싸는 요소, label이 있으면 input을 선택하지 않고 label을 선택해도 인식함-->
+
+        <textarea cols="300" rows="10"></textarea>    <!--많은 글씨를 적을 수 있는 요소-->
+
+    </form>    <!--form으로 input으로 감싸주어야 데이터가 전송이 됨-->
+</body>
+</html>
