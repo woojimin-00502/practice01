@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>납품자 정보</legend>
+        <label for="name">1. 납품자명 : </label>
+        <input type="text" name="name" id="name"><br><br>
+        <label for="name">2. email : </label>
+        <input type="number" name="num" id="num" placeholder="1234abc@naver.com"><br><br>
+        <label for="name">3. 홈페이지 : </label>
+        <input value="https://" type="text" name="text" id="text"><br><br>
+        <label for="name">4. 지역 : </label>
+        <select>
+            <option value="Incheon">인천</option>
+            <option value="Seoul">서울</option>
+            <option value="Daegu">대구</option>
+            <option value="Busan" selected>부산</option> <!--selected select 맨 위에 뜰 값을 정함-->
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <legend>납품 정보</legend>
+        <label for="name">1. 상품명 : </label>
+        <input type="text" name="name" id="name"><br><br>
+        <label for="name">2. 납품수량 : </label>
+        <input type="number" name="num" id="num" placeholder="최소 100"><br><br>
+        <label for="name">3. 납품등급 : </label>
+        <input type="range" name="bar" id="bar" max="10" min="0" step="2"><br><br>
+        <label for="name">4. 기타사항 : </label>
+        <textarea cols="20" rows="5"></textarea><br><br>
+    </fieldset>
+    <br>
+    <input type="submit" value="send message">
+    
+</body>
+</html>
